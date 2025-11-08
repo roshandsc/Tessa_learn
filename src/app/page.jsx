@@ -55,13 +55,6 @@ export default function TessaCloudLanding() {
 
   const internships = [
     {
-      title: "DSA using C++",
-      iconName: "FaCode",
-      duration: "6 Months",
-      mode: "Online",
-      color: "blue-400",
-    },
-    {
       title: "Web Development",
       iconName: "FaGlobe",
       duration: "4-12 weeks",
@@ -90,7 +83,7 @@ export default function TessaCloudLanding() {
       color: "red-400",
     },
     {
-      title: "Cybersecurity Basics",
+      title: "Cybersecurity",
       iconName: "FaShieldAlt",
       duration: "4-12 weeks",
       mode: "Online",
@@ -111,7 +104,7 @@ export default function TessaCloudLanding() {
       color: "green-500",
     },
     {
-      title: "DevOps / Cloud Basics",
+      title: "DevOps / Cloud",
       iconName: "FaCloud",
       duration: "4-12 weeks",
       mode: "Hybrid",
@@ -125,14 +118,14 @@ export default function TessaCloudLanding() {
       color: "gray-400",
     },
     {
-      title: "Game Development (Beginner)",
+      title: "Game Development",
       iconName: "FaGamepad",
       duration: "4-12 weeks",
       mode: "Hybrid",
       color: "pink-400",
     },
     {
-      title: "Full Stack Development (6 Months)",
+      title: "Full Stack Development",
       iconName: "FaLayerGroup",
       duration: "6 Months",
       mode: "Hybrid",
