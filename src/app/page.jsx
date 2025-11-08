@@ -62,17 +62,17 @@ export default function TessaCloudLanding() {
       color: "green-400",
     },
     {
-      title: "Mobile App Development",
-      iconName: "FaMobileAlt",
+      title: "Cybersecurity",
+      iconName: "FaShieldAlt",
       duration: "4-12 weeks",
-      mode: "Hybrid",
-      color: "purple-400",
+      mode: "Online",
+      color: "blue-500",
     },
     {
       title: "Machine Learning / AI",
       iconName: "FaRobot",
       duration: "6-24 weeks",
-      mode: "Hybrid",
+      mode: "Online",
       color: "yellow-400",
     },
     {
@@ -83,18 +83,25 @@ export default function TessaCloudLanding() {
       color: "red-400",
     },
     {
-      title: "Cybersecurity",
-      iconName: "FaShieldAlt",
+      title: "Mobile App Development",
+      iconName: "FaMobileAlt",
       duration: "4-12 weeks",
       mode: "Online",
-      color: "blue-500",
+      color: "purple-400",
     },
     {
       title: "Desktop App Development",
       iconName: "FaDesktop",
       duration: "4-12 weeks",
-      mode: "Hybrid",
+      mode: "Online",
       color: "indigo-400",
+    },
+    {
+      title: "Full Stack Development",
+      iconName: "FaLayerGroup",
+      duration: "6 Months",
+      mode: "Online",
+      color: "orange-400",
     },
     {
       title: "Software Testing & QA",
@@ -107,29 +114,22 @@ export default function TessaCloudLanding() {
       title: "DevOps / Cloud",
       iconName: "FaCloud",
       duration: "4-12 weeks",
-      mode: "Hybrid",
+      mode: "Online",
       color: "teal-400",
     },
     {
       title: "Open Source Contribution",
       iconName: "FaGithub",
       duration: "4-12 weeks",
-      mode: "Remote",
+      mode: "Online",
       color: "gray-400",
     },
     {
       title: "Game Development",
       iconName: "FaGamepad",
       duration: "4-12 weeks",
-      mode: "Hybrid",
+      mode: "Online",
       color: "pink-400",
-    },
-    {
-      title: "Full Stack Development",
-      iconName: "FaLayerGroup",
-      duration: "6 Months",
-      mode: "Hybrid",
-      color: "orange-400",
     },
   ];
 
@@ -1354,7 +1354,7 @@ export default function TessaCloudLanding() {
                     <div className="text-gray-300 space-y-4 text-sm">
                       <p>
                         <strong>Duration:</strong> 6-24 weeks |{" "}
-                        <strong>Mode:</strong> Hybrid
+                        <strong>Mode:</strong> Online
                       </p>
                       <p>
                         <strong>Tools:</strong> Python, Scikit-learn,
@@ -1386,7 +1386,7 @@ export default function TessaCloudLanding() {
                     <div className="text-gray-300 space-y-4 text-sm">
                       <p>
                         <strong>Duration:</strong> 4-12 weeks |{" "}
-                        <strong>Mode:</strong> Hybrid
+                        <strong>Mode:</strong> Online
                       </p>
                       <p>
                         <strong>Platforms:</strong> Android (Java/Kotlin), iOS
@@ -1403,7 +1403,7 @@ export default function TessaCloudLanding() {
                     <div className="text-gray-300 space-y-4 text-sm">
                       <p>
                         <strong>Duration:</strong> 4-12 weeks |{" "}
-                        <strong>Mode:</strong> Hybrid
+                        <strong>Mode:</strong> Online
                       </p>
                       <p>
                         <strong>Tech:</strong> Java (Swing/JavaFX), Python
@@ -1455,7 +1455,7 @@ export default function TessaCloudLanding() {
                     <div className="text-gray-300 space-y-4 text-sm">
                       <p>
                         <strong>Duration:</strong> 4-12 weeks |{" "}
-                        <strong>Mode:</strong> Hybrid
+                        <strong>Mode:</strong> Online
                       </p>
                       <p>
                         <strong>Tools:</strong> Git, Docker, CI/CD, AWS, Azure,
@@ -1471,7 +1471,7 @@ export default function TessaCloudLanding() {
                     <div className="text-gray-300 space-y-4 text-sm">
                       <p>
                         <strong>Duration:</strong> 4-12 weeks |{" "}
-                        <strong>Mode:</strong> Remote
+                        <strong>Mode:</strong> Online
                       </p>
                       <p>
                         <strong>Platforms:</strong> GitHub, GitLab
