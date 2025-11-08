@@ -592,7 +592,11 @@ export default function TessaCloudLanding() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
               {/* Course Card 1 */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <svg
                     stroke="currentColor"
@@ -634,10 +638,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - Python Web Development */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaPython className="text-2xl text-yellow-400" />
                   <div className="text-lg font-semibold">
@@ -668,10 +676,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - Data Science with Python */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaRobot className="text-2xl text-green-400" />
                   <div className="text-lg font-semibold">
@@ -702,10 +714,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - Machine Learning with Python */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaBrain className="text-2xl text-pink-400" />
                   <div className="text-lg font-semibold">
@@ -736,9 +752,13 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
               {/* Course Card - Data Analytics with Python */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaChartLine className="text-2xl text-purple-400" />
                   <div className="text-lg font-semibold">
@@ -769,9 +789,13 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
               {/* Course Card - Data Analytics with Power BI, Tableau & Excel */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaChartBar className="text-2xl text-teal-400" />
                   <div className="text-lg font-semibold">
@@ -802,9 +826,13 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
               {/* Course Card - Full Stack Web App Development with Python */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaLayerGroup className="text-2xl text-orange-400" />
                   <div className="text-lg font-semibold">
@@ -835,9 +863,13 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
               {/* Course Card - SQL for Developers */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaDatabase className="text-2xl text-indigo-400" />
                   <div className="text-lg font-semibold">
@@ -868,10 +900,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - DevOps Essentials */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaCloud className="text-2xl text-white" />
                   <div className="text-lg font-semibold">DevOps Essentials</div>
@@ -900,10 +936,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - Full Stack Web Development with Java */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaJava className="text-2xl text-orange-500" />
                   <div className="text-lg font-semibold">
@@ -934,10 +974,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - Cloud Computing Basics */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaCloud className="text-2xl text-teal-400" />
                   <div className="text-lg font-semibold">
@@ -968,10 +1012,14 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Course Card - Cybersecurity Essentials */}
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]">
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-gradient-to-br from-gray-900 to-gray-800 p-4 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow flex flex-col min-h-[240px]"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <FaShieldAlt className="text-2xl text-red-500" />
                   <div className="text-lg font-semibold">
@@ -1002,7 +1050,7 @@ export default function TessaCloudLanding() {
                     Enroll Now →
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </section>
 
@@ -1224,6 +1272,17 @@ export default function TessaCloudLanding() {
                       <strong>Career Growth:</strong> From internship to
                       placement — Tessa Learn bridges the gap between learning
                       and earning.
+                    </span>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ scale: 1.05, color: "#ffffff" }}
+                    className="flex items-center gap-3"
+                  >
+                    <FaUserTie className="text-teal-400 text-xl" />
+                    <span>
+                      <strong>Placement Assistance:</strong> Backed by Tessa
+                      Cloud, we provide mentorship, mock interviews, and
+                      verified certificates that boost employability.
                     </span>
                   </motion.li>
                   <motion.li
@@ -1649,6 +1708,7 @@ export default function TessaCloudLanding() {
         </section>
 
         {/* Footer */}
+        {/* <ZohoContactFormEmbed /> -- removed as per instructions */}
         <footer className="mt-12 border-t border-gray-800 bg-black/40">
           <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Internships */}
@@ -1854,66 +1914,33 @@ function ZohoContactFormEmbed() {
   const [isDesktop, setIsDesktop] = useState(null);
 
   useEffect(() => {
-    // Check screen width only on client side
     const handleResize = () => {
       setIsDesktop(window.innerWidth > 768);
     };
-
-    handleResize(); // Run once on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    // For mobile view, dynamically inject full-height Zoho form
-    if (isDesktop === false) {
-      const container = document.getElementById(
-        "zf_div_0qrgWzTrDHLuSZM1G2wlEdB1dStYFoMV3V3XYRodGC0"
-      );
-      if (container && container.children.length === 0) {
-        const iframe = document.createElement("iframe");
-        iframe.src =
-          "https://forms.zohopublic.in/tessacloud1/form/ContactUs/formperma/0qrgWzTrDHLuSZM1G2wlEdB1dStYFoMV3V3XYRodGC0?zf_rszfm=1";
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "80vh";
-        iframe.style.overflowY = "auto";
-        iframe.style.WebkitOverflowScrolling = "touch";
-        iframe.style.borderRadius = "16px";
-        iframe.style.margin = "0";
-        iframe.allowFullscreen = true;
-        container.appendChild(iframe);
-      }
-    }
-  }, [isDesktop]);
-
-  // Wait until we know if it's desktop or mobile
   if (isDesktop === null) return null;
 
   return (
     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
-      <div
-        id="zf_div_0qrgWzTrDHLuSZM1G2wlEdB1dStYFoMV3V3XYRodGC0"
-        style={{ width: "100%" }}
-      ></div>
-
-      {/* Desktop view only */}
-      {isDesktop && (
-        <iframe
-          src="https://forms.zohopublic.in/tessacloud1/form/ContactUs/formperma/0qrgWzTrDHLuSZM1G2wlEdB1dStYFoMV3V3XYRodGC0?zf_rszfm=1"
-          title="Contact Us"
-          aria-label="Contact Us"
-          style={{
-            border: "none",
-            width: "100%",
-            height: "400px",
-            borderRadius: "12px",
-            boxShadow: "0 6px 20px rgba(0,0,0,0.5)",
-          }}
-          allowFullScreen
-        ></iframe>
-      )}
+      <iframe
+        src="https://forms.zohopublic.in/tessacloud1/form/ContactUs/formperma/0qrgWzTrDHLuSZM1G2wlEdB1dStYFoMV3V3XYRodGC0?zf_rszfm=1"
+        title="Contact Us"
+        aria-label="Contact Us"
+        style={{
+          border: "none",
+          width: "100%",
+          height: isDesktop ? "450px" : "80vh",
+          borderRadius: "12px",
+          boxShadow: "0 6px 20px rgba(0,0,0,0.5)",
+          overflowY: "auto",
+          WebkitOverflowScrolling: "touch",
+        }}
+        allowFullScreen
+      ></iframe>
     </div>
   );
 }
