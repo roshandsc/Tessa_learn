@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Banner Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 15vh;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/banner_img_ts.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.55);
+  z-index: 0;
+  will-change: transform;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 90%;
+  width: 100%;
+}
+
+.hero-content img {
+  width: 8rem;
+  max-width: 42rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #d1d5db;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-buttons button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.hero-buttons .red-button {
+  background-color: #ef4444;
+  color: white;
+}
+
+.hero-buttons .red-button:hover {
+  background-color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 10vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons button {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Internship Cards Scrolling Fix */
+.internship-card {
+  max-height: 80vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .internship-card {
+    max-height: 70vh;
+  }
+}
+
+.cards-container {
+  overflow-x: auto;
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
