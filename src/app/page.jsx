@@ -191,10 +191,9 @@ export default function TessaCloudLanding() {
   ];
 
   const displayedInternships = showAll
-    ? rows.flat().filter(Boolean)
+    ? internships // show all internships when View More is active
     : firstRow.map((title) => {
         return (
-          internships.find((i) => i.title === title) ||
           internships.find((i) =>
             i.title.toLowerCase().includes(title.toLowerCase())
           ) || {
@@ -205,7 +204,6 @@ export default function TessaCloudLanding() {
           }
         );
       });
-
   return (
     <>
       <Head>
