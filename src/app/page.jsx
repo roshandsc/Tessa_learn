@@ -190,14 +190,21 @@ export default function TessaCloudLanding() {
     remaining.map((title) => internships.find((i) => i.title === title)),
   ];
 
-  const displayedInternships = firstRow.map((title) => {
-    return (
-      internships.find((i) => i.title === title) ||
-      internships.find((i) =>
-        i.title.toLowerCase().includes(title.toLowerCase())
-      ) || { title, iconName: "FaQuestionCircle", mode: "N/A", duration: "N/A" }
-    );
-  });
+  const displayedInternships = showAll
+    ? rows.flat().filter(Boolean)
+    : firstRow.map((title) => {
+        return (
+          internships.find((i) => i.title === title) ||
+          internships.find((i) =>
+            i.title.toLowerCase().includes(title.toLowerCase())
+          ) || {
+            title,
+            iconName: "FaQuestionCircle",
+            mode: "N/A",
+            duration: "N/A",
+          }
+        );
+      });
 
   return (
     <>
