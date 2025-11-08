@@ -190,9 +190,14 @@ export default function TessaCloudLanding() {
     remaining.map((title) => internships.find((i) => i.title === title)),
   ];
 
-  const displayedInternships = showAll
-    ? rows.flat()
-    : rows[0].concat(rows[1].slice(0, Math.max(0, 4 - rows[0].length)));
+  const displayedInternships = firstRow.map((title) => {
+    return (
+      internships.find((i) => i.title === title) ||
+      internships.find((i) =>
+        i.title.toLowerCase().includes(title.toLowerCase())
+      ) || { title, iconName: "FaQuestionCircle", mode: "N/A", duration: "N/A" }
+    );
+  });
 
   return (
     <>
@@ -1099,69 +1104,18 @@ export default function TessaCloudLanding() {
               real-world exposure across tech domains.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
-              {displayedInternships.map((it) => {
-                const IconComponent = FaIcons[it.iconName];
+              {displayedInternships.filter(Boolean).map((it, idx) => {
+                const IconComponent =
+                  it?.iconName && FaIcons[it.iconName]
+                    ? FaIcons[it.iconName]
+                    : FaIcons.FaQuestionCircle;
                 return (
-                  <HydrationSafe key={it.title}>
-                    <motion.div
-                      whileHover={{ scale: 1.03 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                      className="bg-gradient-to-br from-gray-900 to-gray-800 p-5 rounded-xl border border-gray-700 shadow-md hover:shadow-xl transition-shadow min-h-[260px] flex flex-col"
-                    >
-                      <div className="flex items-center gap-3 mb-3">
-                        {IconComponent && (
-                          <IconComponent
-                            className={`text-2xl ${
-                              it.title === "Mobile App Development"
-                                ? "text-purple-400"
-                                : it.color === "blue-400"
-                                ? "text-blue-400"
-                                : it.color === "green-400"
-                                ? "text-green-400"
-                                : it.color === "yellow-400"
-                                ? "text-yellow-400"
-                                : it.color === "red-400"
-                                ? "text-red-400"
-                                : it.color === "blue-500"
-                                ? "text-blue-500"
-                                : it.color === "indigo-400"
-                                ? "text-indigo-400"
-                                : it.color === "green-500"
-                                ? "text-green-500"
-                                : it.color === "teal-400"
-                                ? "text-teal-400"
-                                : it.color === "gray-400"
-                                ? "text-gray-400"
-                                : it.color === "pink-400"
-                                ? "text-pink-400"
-                                : it.color === "orange-400"
-                                ? "text-orange-400"
-                                : "text-white"
-                            }`}
-                          />
-                        )}
-                        <div className="text-lg font-semibold">{it.title}</div>
-                      </div>
-                      <div className="text-sm text-gray-400 mt-2 flex flex-col gap-2 flex-grow">
-                        <div className="flex justify-between">
-                          <span>Duration:</span>
-                          <span>{it.duration}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Mode:</span>
-                          <span>{it.mode}</span>
-                        </div>
-                      </div>
-                      <div className="mt-auto">
-                        <button
-                          onClick={() => setSelectedInternship(it)}
-                          className="w-full px-5 py-2.5 rounded-lg bg-gradient-to-r from-red-700 via-red-500 to-gray-900 text-white font-semibold shadow-[0_0_6px_rgba(255,0,85,0.2)] hover:shadow-[0_0_10px_rgba(255,0,85,0.3)] transition-all duration-300 hover:scale-105 hover:from-gray-900 hover:to-red-700"
-                        >
-                          <span className="tracking-wide">View Details →</span>
-                        </button>
-                      </div>
-                    </motion.div>
-                  </HydrationSafe>
+                  <div key={idx} className="internship-card">
+                    <IconComponent />
+                    <h3>{it.title}</h3>
+                    <p>{it.mode}</p>
+                    <p>{it.duration}</p>
+                  </div>
                 );
               })}
             </div>
