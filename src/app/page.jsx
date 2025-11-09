@@ -219,9 +219,10 @@ export default function TessaCloudLanding() {
                 className="w-10 h-10 md:w-12 md:h-12 object-contain"
               />
               <span
-                className={`text-lg md:text-xl font-semibold text-white ${rubik.className}`}
+                className={`text-lg md:text-xl font-semibold ${rubik.className}`}
               >
-                Tessa Learn
+                <span className="text-red-500">T</span>
+                <span className="text-white">essa Learn</span>
               </span>
             </div>
 
@@ -1094,7 +1095,8 @@ export default function TessaCloudLanding() {
             ref={popularCategoriesRef}
           >
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-red-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent tracking-wide text-center">
-              Unlock Your Future | Explore Opportunities That Shape You
+              Unlock Your Future | Explore Internship Opportunities That Shape
+              You
             </h2>
             <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
               Every great career begins with a single step. Discover internships
@@ -1680,7 +1682,7 @@ export default function TessaCloudLanding() {
                     href="#internships"
                     className="hover:text-white transition"
                   >
-                    SQL
+                    Cloud
                   </a>
                 </li>
                 <li>
@@ -1688,7 +1690,23 @@ export default function TessaCloudLanding() {
                     href="#internships"
                     className="hover:text-white transition"
                   >
-                    Cloud
+                    Mobile App Development
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#internships"
+                    className="hover:text-white transition"
+                  >
+                    Desktop App Development
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#internships"
+                    className="hover:text-white transition"
+                  >
+                    Software Testing & QA
                   </a>
                 </li>
               </ul>
@@ -1698,11 +1716,6 @@ export default function TessaCloudLanding() {
             <div>
               <h3 className="font-semibold mb-3 text-lg text-white">Courses</h3>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>
-                  <a href="#courses" className="hover:text-white transition">
-                    Mobile App Development
-                  </a>
-                </li>
                 <li>
                   <a href="#courses" className="hover:text-white transition">
                     Full Stack Development
@@ -1715,17 +1728,17 @@ export default function TessaCloudLanding() {
                 </li>
                 <li>
                   <a href="#courses" className="hover:text-white transition">
-                    Desktop App Development
-                  </a>
-                </li>
-                <li>
-                  <a href="#courses" className="hover:text-white transition">
                     Cybersecurity
                   </a>
                 </li>
                 <li>
                   <a href="#courses" className="hover:text-white transition">
-                    Software Testing & QA
+                    SQL
+                  </a>
+                </li>
+                <li>
+                  <a href="#courses" className="hover:text-white transition">
+                    Cloud
                   </a>
                 </li>
               </ul>
