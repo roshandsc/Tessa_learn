@@ -249,9 +249,28 @@ export default function TessaCloudLanding() {
               >
                 Placement Support
               </a>
-              <a href="#downloads" className="hover:text-red-500 transition">
-                Downloads
-              </a>
+              {/* Downloads Dropdown */}
+              <div className="relative group">
+                <button className="hover:text-red-500 transition">
+                  Downloads ▾
+                </button>
+                <div className="absolute hidden group-hover:block bg-black/90 border border-gray-700 mt-2 rounded-lg shadow-lg z-50 min-w-[220px]">
+                  <a
+                    href="/tessa_learn_opportunities.pdf"
+                    download
+                    className="block px-4 py-2 text-sm text-white hover:bg-gray-800"
+                  >
+                    📘 Download Brochure
+                  </a>
+                  <a
+                    href="/Sample_Certificate_Tessa_Learn.pdf"
+                    download
+                    className="block px-4 py-2 text-sm text-white hover:bg-gray-800"
+                  >
+                    📄 Sample Certificate
+                  </a>
+                </div>
+              </div>
               <a
                 href="#"
                 className="hover:text-red-500 transition"
@@ -343,12 +362,22 @@ export default function TessaCloudLanding() {
                 >
                   Placement Support
                 </a>
+                {/* Downloads direct links for mobile */}
                 <a
-                  href="#downloads"
+                  href="/tessa_learn_opportunities.pdf"
+                  download
                   className="hover:text-red-500 transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Downloads
+                  📘 Download Brochure
+                </a>
+                <a
+                  href="/Sample_Certificate_Tessa_Learn.pdf"
+                  download
+                  className="hover:text-red-500 transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  📄 Sample Certificate
                 </a>
                 <a
                   href="#"
@@ -1054,82 +1083,9 @@ export default function TessaCloudLanding() {
             </div>
           </section>
 
-          {/* Brochure and Certifications Section */}
-          <section className="max-w-7xl mx-auto px-6 py-16">
-            <div className="flex flex-col items-center gap-10 w-full">
-              {/* Download Brochure Card */}
-              <div className="bg-[#0A0F1C] border-2 border-cyan-400 rounded-2xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-[0_0_20px_rgba(0,255,255,0.1)] hover:shadow-[0_0_25px_rgba(0,255,255,0.2)] transition-all max-w-5xl w-full">
-                <div>
-                  <h3 className="text-3xl font-extrabold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent mb-3">
-                    Download Our Brochure
-                  </h3>
-                  <p className="text-gray-400 max-w-2xl">
-                    Get a detailed overview of Tessa Learn programs, internship
-                    tracks, and placement support in our official brochure.
-                  </p>
-                </div>
-                <a
-                  href="/tessa_learn_opportunities.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold shadow-md hover:scale-105 transition-transform"
-                >
-                  📄 Download Brochure
-                </a>
-              </div>
+          {/* Brochure and Certifications Section - removed */}
 
-              {/* Certification Card */}
-              <div className="bg-[#0A0F1C] border-2 border-yellow-400 rounded-2xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-[0_0_20px_rgba(255,255,0,0.1)] hover:shadow-[0_0_25px_rgba(255,255,0,0.2)] transition-all max-w-5xl w-full">
-                <div>
-                  <h3 className="text-3xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent mb-3">
-                    Tessa Learn Certifications
-                  </h3>
-                  <p className="text-gray-400 max-w-2xl">
-                    Every learner receives a{" "}
-                    <strong>Tessa Learn Course Certificate</strong> or{" "}
-                    <strong>Internship Completion Certificate</strong> verified
-                    by <strong>Tessa Cloud</strong>. Each certificate carries a{" "}
-                    <strong>unique verification ID</strong> that companies can
-                    validate directly through nessa Cloud’s platform — ensuring
-                    trust and authenticity in every credential.
-                  </p>
-                </div>
-                <a
-                  href="/Sample_Certificate_Tessa_Learn.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold shadow-md hover:scale-105 transition-transform"
-                >
-                  View Sample Certificate →
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* Downloads Section */}
-          <section id="downloads" className="max-w-7xl mx-auto px-6 py-16">
-            <h2 className="text-3xl font-extrabold text-center mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Downloads
-            </h2>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a
-                href="/tessa_learn_opportunities.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold shadow-md hover:scale-105 transition-transform"
-              >
-                📘 Training Brochure
-              </a>
-              <a
-                href="/Sample_Certificate_Tessa_Learn.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold shadow-md hover:scale-105 transition-transform"
-              >
-                📄 Courses Brochure
-              </a>
-            </div>
-          </section>
+          {/* Downloads Section - removed */}
 
           {/* Internship Cards */}
           <section
@@ -1619,57 +1575,27 @@ export default function TessaCloudLanding() {
                   confidence.
                 </p>
               </div>
-            </div>
-          </section>
-
-          {/* Training & Placement */}
-          <section className="max-w-7xl mx-auto px-6 py-12">
-            <h2 className="text-2xl font-semibold mb-6">
-              Training & Placement
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Resume Writing Accordion */}
-              <HydrationSafe>
-                <motion.div
-                  whileHover={{ y: -6 }}
-                  className="accordion-item bg-gradient-to-tr from-black to-gray-900 border border-gray-700 rounded-xl p-4"
-                >
-                  <button
-                    className="w-full text-left font-semibold text-white flex justify-between items-center"
-                    onClick={() => setShowResumeAccordion(!showResumeAccordion)}
-                  >
-                    Resume Writing
-                    <span>{showResumeAccordion ? "−" : "+"}</span>
-                  </button>
-                  {showResumeAccordion && (
-                    <div className="text-gray-400 text-sm mt-2">
-                      Learn to write compelling resumes that stand out. Get
-                      templates, feedback, and professional writing tips from
-                      our mentors.
-                    </div>
-                  )}
-                </motion.div>
-              </HydrationSafe>
-              {/* Other Trainings */}
-              {trainings
-                .filter((t) => t.title !== "Resume Building")
-                .map((t) => (
-                  <HydrationSafe key={t.title}>
-                    <motion.div
-                      whileHover={{ y: -6 }}
-                      className="p-5 rounded-xl bg-gradient-to-tr from-black to-gray-900 border border-gray-700 text-center"
-                    >
-                      <div className="w-14 h-14 mx-auto rounded-full bg-gray-800 flex items-center justify-center mb-3">
-                        {t.icon}
-                      </div>
-                      <div className="font-semibold">{t.title}</div>
-                      <p className="text-sm text-gray-400 mt-2">
-                        Practical sessions and expert mentors to boost your
-                        career.
-                      </p>
-                    </motion.div>
-                  </HydrationSafe>
-                ))}
+              {/* Resume Writing Card */}
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 shadow-md text-center">
+                <FaFileAlt className="text-3xl text-cyan-400 mx-auto mb-3" />
+                <h4 className="text-lg font-semibold mb-2">Resume Writing</h4>
+                <p className="text-gray-400 text-sm">
+                  Learn to write compelling resumes that stand out. Get
+                  templates, feedback, and professional writing tips from our
+                  mentors.
+                </p>
+              </div>
+              {/* LinkedIn Optimization Card */}
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 shadow-md text-center">
+                <FaLinkedinIn className="text-3xl text-blue-500 mx-auto mb-3" />
+                <h4 className="text-lg font-semibold mb-2">
+                  LinkedIn Optimization
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Optimize your LinkedIn profile to attract recruiters and build
+                  your professional brand effectively.
+                </p>
+              </div>
             </div>
           </section>
         </main>
