@@ -226,7 +226,7 @@ export default function TessaCloudLanding() {
             </div>
 
             {/* Center: Navigation Links */}
-            <nav className="hidden md:flex gap-8 text-xs lg:text-sm text-white font-medium tracking-wide">
+            <nav className="hidden md:flex gap-8 text-xs lg:text-sm text-white tracking-wide">
               <a href="#" className="hover:text-red-500 transition">
                 Home
               </a>
@@ -250,11 +250,11 @@ export default function TessaCloudLanding() {
                 Placement Support
               </a>
               {/* Downloads Dropdown */}
-              <div className="relative group">
+              <div className="relative group z-50">
                 <button className="hover:text-red-500 transition">
                   Downloads ▾
                 </button>
-                <div className="absolute hidden group-hover:block bg-black/90 border border-gray-700 mt-2 rounded-lg shadow-lg z-50 min-w-[220px]">
+                <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-black/90 border border-gray-700 mt-2 rounded-lg shadow-lg z-50 min-w-[220px] transition-all duration-200 pointer-events-auto">
                   <a
                     href="/tessa_learn_opportunities.pdf"
                     download
