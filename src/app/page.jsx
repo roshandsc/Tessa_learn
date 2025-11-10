@@ -549,7 +549,7 @@ export default function TessaCloudLanding() {
                   <img
                     alt="Hero banner"
                     className="w-full h-full object-cover rounded-2xl"
-                    src="/wmremove-transformed.png"
+                    src="/hero.png"
                   />
                 </div>
               </div>
@@ -1674,22 +1674,6 @@ export default function TessaCloudLanding() {
                     href="#internships"
                     className="hover:text-white transition"
                   >
-                    Cybersecurity
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#internships"
-                    className="hover:text-white transition"
-                  >
-                    Cloud
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#internships"
-                    className="hover:text-white transition"
-                  >
                     Mobile App Development
                   </a>
                 </li>
@@ -1699,14 +1683,6 @@ export default function TessaCloudLanding() {
                     className="hover:text-white transition"
                   >
                     Desktop App Development
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#internships"
-                    className="hover:text-white transition"
-                  >
-                    Software Testing & QA
                   </a>
                 </li>
               </ul>
